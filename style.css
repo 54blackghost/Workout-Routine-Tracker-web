@@ -1,0 +1,66 @@
+:root {
+  --main-bg: #f4f4f4;
+  --tab-bg: #2196F3;
+  --tab-active-bg: #0b79d0;
+  --btn-bg: #4CAF50;
+  --btn-hover: #45a049;
+  --card-bg: #ffffff;
+  --text-color: #333333;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--main-bg);
+  color: var(--text-color);
+}
+.tracker {
+  max-width: 600px;
+  margin: 2em auto;
+  background: var(--card-bg);
+  padding: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+h1 { text-align: center; }
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.tab {
+  flex: 1;
+  background: var(--tab-bg);
+  border: none;
+  color: #fff;
+  padding: 0.5em;
+  cursor: pointer;
+}
+.tab.active { background: var(--tab-active-bg); }
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  margin-bottom: 1em;
+}
+form input, form select {
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  background: var(--btn-bg);
+  color: #fff;
+  border: none;
+  padding: 0.7em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+form button:hover { background: var(--btn-hover); }
+.workout-card {
+  background: var(--card-bg);
+  margin-bottom: 0.5em;
+  padding: 0.7em;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}

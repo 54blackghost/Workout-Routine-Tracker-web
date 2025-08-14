@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Workout Routine Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tracker">
+    <h1>Workout Routine Tracker</h1>
+    <div class="tabs">
+      <button class="tab active" data-day="Monday">Lundi</button>
+      <button class="tab" data-day="Tuesday">Mardi</button>
+      <button class="tab" data-day="Wednesday">Mercredi</button>
+      <button class="tab" data-day="Thursday">Jeudi</button>
+      <button class="tab" data-day="Friday">Vendredi</button>
+      <button class="tab" data-day="Saturday">Samedi</button>
+      <button class="tab" data-day="Sunday">Dimanche</button>
+    </div>
+    <form id="addWorkoutForm">
+      <select id="daySelect">
+        <option value="Monday">Lundi</option>
+        <option value="Tuesday">Mardi</option>
+        <option value="Wednesday">Mercredi</option>
+        <option value="Thursday">Jeudi</option>
+        <option value="Friday">Vendredi</option>
+        <option value="Saturday">Samedi</option>
+        <option value="Sunday">Dimanche</option>
+      </select>
+      <input type="text" id="workoutName" placeholder="Nom de l’exercice" required>
+      <input type="number" id="duration" placeholder="Durée (min)" required>
+      <input type="number" id="sets" placeholder="Séries" required>
+      <input type="url" id="url" placeholder="Lien tutoriel (URL)">
+      <button type="submit">Ajouter</button>
+    </form>
+    <div id="workoutDisplay"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
